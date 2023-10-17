@@ -9,7 +9,8 @@ body{
     font-family: sans-serif;
 }
 nav{
-    background: #27A3D8;
+    position: fixed;
+    background: #1C96E3;
     height: 80px;
     width: 100%;
 }
@@ -19,6 +20,10 @@ label.logo{
     line-height: 80px;
     padding-left: 50px;
     font-weight: bold;
+}
+label.logo img{
+    height: 60px;
+    margin-top: 10px;
 }
 nav ul{
     float: right;
@@ -32,12 +37,13 @@ nav ul li{
 nav ul li a{
     color: white;
     font-size: 17px;
+    font-weight: bold;
     padding: 7px 13px;
-    border-radius: 3px;
+    border-radius: 20px;
     text-transform: uppercase;
 }
 a.active,a:hover{
-    background: blue;
+    background: #1CE369;
     transition: .5s;
 }
 .checkbtn{
@@ -69,7 +75,7 @@ a.active,a:hover{
     ul{
         position: fixed;
         width: 100%;
-        background: grey;
+        background: #0073bb;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -85,7 +91,7 @@ a.active,a:hover{
     }
     a:hover,a.active{
         background: none;
-        color: #27A3D8;
+        color: #1CE369;
     }
     #check:checked ~ ul{
         left: 0;
