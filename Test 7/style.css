@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.section-main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/nusa.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.section-main h1 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    border-radius: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+}
+
+header.sticky {
+    background: #1483D5;
+    padding: 15px 100px;
+}
+
+header .brand {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background;
+}
+
+header .div a:active {}
+
+header .menu a:hover {
+    color: #000;
+    background: #fff;
+}
+
+header .btn {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1060px) {
+    header .btn {
+        display: block;
+    }
+
+    header .menu {
+        position: fixed;
+        background: #1483D5;
+        flex-direction: column;
+        min-width: 400px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: 0.5s;
+        transition-property: right;
+    }
+
+    header .menu.active {
+        right: 0;
+    }
+
+    header .menu .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+    header .menu a {
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 630px) {
+    .section-main h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+main {
+    position: relative;
+    background-color: #353;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax {
+    pointer-events: none;
+}
+
+.layer0 {
+    position: absolute;
+    width: 1800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.paralax h1 {
+    font-weight: 600;
+    font-size: 8rem;
+    pointer-events: auto;
+}
+
+.layer1 {
+    position: absolute;
+    width: 1800;
+    top: calc(50% + 50px);
+    left: calc(50% + 620px);
+    transform: translate(-50%, -50%);
+}
+
+.layer2 {
+    position: absolute;
+    width: 1800;
+    z-index: 11;
+    top: calc(50% + 45px);
+    left: calc(50% + 85px);
+    transform: translate(-50%, -50%);
+}
+
+.layer3 {
+    position: absolute;
+    width: 1800;
+    top: calc(50% + 20px);
+    left: calc(50% - 620px);
+    transform: translate(-50%, -50%);
+}
+
+.layer4 {
+    position: absolute;
+    z-index: 11;
+    width: 1800;
+    top: calc(50% + 180px);
+    left: calc(50% + 530px);
+    transform: translate(-50%, -50%);
+}
+
+.layer5 {
+    position: absolute;
+    z-index: 10;
+    width: 1800;
+    top: calc(50% - 40px);
+    left: calc(50% - 450px);
+    transform: translate(-50%, -50%);
+
+}
+
+.layer6 {
+    position: absolute;
+    z-index: 10;
+    width: 1800;
+    top: calc(50% + 300px);
+    left: calc(50% - 380px);
+    transform: translate(-50%, -50%);
+}
+
+.layer7 {
+    position: absolute;
+    z-index: 10;
+    width: 1800;
+    top: calc(50% + 180px);
+    left: calc(50% - 150px);
+    transform: translate(-50%, -50%);
+}
+
+.layer8 {
+    position: absolute;
+    z-index: 10;
+    width: 1800;
+    top: calc(50% + 300px);
+    left: calc(50% + 170px);
+    transform: translate(-50%, -50%);
+}
+
+.paralax {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+::selection {
+    background-color: rgb(124, 108, 55);
+}
